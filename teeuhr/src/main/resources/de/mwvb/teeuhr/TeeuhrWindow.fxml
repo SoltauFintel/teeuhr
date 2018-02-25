@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+
+	<center>
+		<BorderPane>
+			<padding><Insets left="16" top="16" bottom="16" right="16"/></padding>
+			<center>
+				<VBox spacing="12">
+					<Button fx:id="event1" text="Wasser kochen" minWidth="120" onAction="#onEvent1"/>
+					<Button fx:id="event2" text="Ziehen" minWidth="120" onAction="#onEvent2"/>
+					<Button fx:id="event3" text="Trinkfertig" minWidth="120" onAction="#onEvent3"/>
+					<Button fx:id="event4" text="Sonderaktion" minWidth="120" onAction="#onEvent4"/>
+					<Button fx:id="cancel" text="Abbruch" onAction="#onCancel"/>
+					<Label fx:id="info" text="keine Aktion aktiv"/>
+				
+					<GridPane hgap="8" vgap="8">
+						<padding><Insets top="12" bottom="12"/></padding>
+						
+						<Label text="Dauer Wasser kochen:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+						<TextField fx:id="zeit1" GridPane.rowIndex="0" GridPane.columnIndex="1" maxWidth="70"/>
+
+						<Label text="Dauer Ziehen:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+						<TextField fx:id="zeit2" GridPane.rowIndex="1" GridPane.columnIndex="1" maxWidth="70"/>
+
+						<Label text="Dauer Trinkfertig:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+						<TextField fx:id="zeit3" GridPane.rowIndex="2" GridPane.columnIndex="1" maxWidth="70"/>
+
+						<Label text="Dauer Sonderaktion:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+						<TextField fx:id="zeit4" GridPane.rowIndex="3" GridPane.columnIndex="1" maxWidth="70"/>
+
+						<Button fx:id="speichern" text="Speichern" GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#onSave"/>
+
+						<Label text="Eingabe:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+						<Label text="Minuten(0-)[,Sekunden(0-60)]" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+					</GridPane>
+				</VBox>
+			</center>
+		</BorderPane>
+	</center>
+
+</BorderPane>
+
+ 

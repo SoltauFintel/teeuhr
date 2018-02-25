@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+compileJava.options.encoding = 'windows-1252'
+//compileTestJava.options.encoding = 'windows-1252'
+
+dependencies {
+}
+
+repositories {
+	mavenCentral()
+}
+
+// Mit diesem task wird die Anwendung gebaut. Man erhaelt dann eine doppelklickbare StandAlone-JAR.
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'de.mwvb.teeuhr.TeeuhrApp'
+    }
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
