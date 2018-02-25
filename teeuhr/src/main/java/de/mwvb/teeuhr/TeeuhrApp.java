@@ -1,6 +1,5 @@
 package de.mwvb.teeuhr;
 
-import de.mwvb.teeuhr.service.DAO;
 import de.mwvb.teeuhr.window.TeeuhrWindow;
 import javafx.stage.Stage;
 
@@ -17,7 +16,6 @@ public class TeeuhrApp extends javafx.application.Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		DAO.init();
 		new TeeuhrWindow().show(stage, false, null);
 	}
 }

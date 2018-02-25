@@ -11,7 +11,7 @@ import java.util.List;
 public class DAO {
 	private static String pfad;
 	
-	public static void init() {
+	static {
 		pfad = System.getProperty("user.home").replace("\\", "/") + "/teeuhr";
 		File file = new File(pfad);
 		if (!file.isDirectory() && !file.mkdirs()) {
