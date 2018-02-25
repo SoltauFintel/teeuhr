@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.mwvb.teeuhr.gui.Window;
+import de.mwvb.teeuhr.model.Dauer;
 import de.mwvb.teeuhr.service.Config;
 import de.mwvb.teeuhr.service.DAO;
 import javafx.application.Platform;

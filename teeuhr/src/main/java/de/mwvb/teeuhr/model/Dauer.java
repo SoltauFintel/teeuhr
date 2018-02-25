@@ -1,4 +1,4 @@
-package de.mwvb.teeuhr;
+package de.mwvb.teeuhr.model;
 
 public class Dauer {
 	private int minuten;
