@@ -1,8 +1,9 @@
-package de.mwvb.teeuhr;
+package de.mwvb.teeuhr.window;
 
 import java.io.InputStream;
 
-import de.mwvb.teeuhr.gui.Window;
+import de.mwvb.gui.base.Window;
+import de.mwvb.teeuhr.TeeuhrApp;
 import javafx.stage.Stage;
 
 public class TeeuhrWindow extends Window<TeeuhrController> {

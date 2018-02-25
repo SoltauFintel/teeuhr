@@ -1,4 +1,4 @@
-package de.mwvb.teeuhr.gui;
+package de.mwvb.gui.base;
 
 import java.io.IOException;
 import java.io.InputStream;
