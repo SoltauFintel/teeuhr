@@ -8,7 +8,7 @@ import javafx.stage.Stage;
  */
 public class TeeuhrApp extends javafx.application.Application {
 	public static final String APP_NAME = "Teeuhr";
-	public static final String APP_VERSION = "0.1.0";
+	public static final String APP_VERSION = "0.1.1";
 
 	public static void main(String[] args) {
 		launch(TeeuhrApp.class, new String[] {});

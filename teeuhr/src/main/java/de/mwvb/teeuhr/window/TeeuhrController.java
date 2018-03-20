@@ -115,6 +115,7 @@ public class TeeuhrController {
 		String topic = "aktiv: " + getAktion(nr);
 		System.out.println(topic);
 		info.setText(topic);
+		getStage().setIconified(true);
 		timer.start();
 	}
 
